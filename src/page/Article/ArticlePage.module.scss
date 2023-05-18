@@ -1,0 +1,105 @@
+.wrapper {
+    width: var(--default-layout-width);
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    .create {
+        margin-top: 20px;
+        margin: auto;
+        font-size: 2rem;
+    }
+    .post-wrapper {
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .post {
+        width: 30%;
+
+        margin: auto;
+        margin-top: 20px;
+        padding: 16px 12px;
+
+        display: flex;
+        // flex-direction: row;
+
+        border: 1px solid #6b6b6b;
+        border-radius: 10px;
+
+        background-color: #636262;
+
+        .interact {
+            flex: 1;
+            color: #fff;
+            .like {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.6rem;
+                .like__icon {
+                    font-size: 3rem;
+                    color: rgb(253, 82, 82);
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .comment {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .comment__icon {
+                    font-size: 3rem;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .post-block {
+            width: 85%;
+        }
+        .author {
+            display: flex;
+
+            .avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+            .info {
+                text-align: left;
+            }
+            h3 {
+                color: #fff;
+            }
+            span {
+                color: #b0b3b8;
+            }
+        }
+        .content {
+            display: flex;
+            padding: 4px 10px;
+            max-height: 134px;
+            p {
+                overflow: hidden;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                text-overflow: ellipsis;
+            }
+
+            flex-direction: column;
+            text-align: left;
+            color: #fff;
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.wrapper {
+    width: 60%;
+    margin: auto;
+    margin-top: 5rem;
+    background-color: rgb(238, 136, 20);
+
+    border: 1px solid #000;
+    border-radius: 20px;
+    .form-control {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        label {
+            width: 60%;
+            text-align: left;
+        }
+        input {
+            width: 60%;
+            padding: 4px 10px;
+            margin-bottom: 12px;
+
+            border-radius: 8px;
+
+            font-size: 1.8rem;
+            line-height: 1.8;
+        }
+        .btn-submit {
+            width: 150px;
+            padding: 4px 8px;
+            font-size: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+    }
+}
